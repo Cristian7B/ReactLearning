@@ -6,19 +6,19 @@ export function Winner({winner, resetGame}) {
 
     return (
         <section className="winner">
-        <div className="text">
-            <h2>
-                {winnerText}
-            </h2>
-        </div>
+            <div className="text">
+                <h2>
+                    {winnerText}
+                </h2>
+            </div>
 
-        <header className="win">
-            {winner && <Square>{winner}</Square>}
-        </header>
+            <header className="win">
+                {winner && <Square>{winner}</Square>}
+            </header>
 
-        <footer>
-            <button onClick={resetGame}>Empezar de nuevo</button>
-        </footer>
+            <footer>
+                <button onClick={resetGame}>Empezar de nuevo</button>
+            </footer>
         </section>
     )
 }

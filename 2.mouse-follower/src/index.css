@@ -91,6 +91,13 @@ body.no-cursor {
   height: 30;
 }
 
+.containerAllGame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .gameContainerFood {
   background: rgba(83, 91, 242, 0.94);
   border-radius: 16px;
@@ -122,4 +129,16 @@ body.no-cursor {
 .elementFood {
   font-size: 25px;
   position: relative;
+  transition: all ease 0.3s;
+}
+
+.modalWinner {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }

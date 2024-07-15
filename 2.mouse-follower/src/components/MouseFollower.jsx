@@ -38,7 +38,6 @@ export function MouseFollower() {
     return (
         <>
             <div className='cursorFollower' style={STYLES}/>
-            <button onClick={buttonRemoveDisplay}>{enabledEffect ? "Desactivar" : "Activar"}</button>
         </>
     )
 }
