@@ -1,19 +1,11 @@
 import {useState, useEffect } from 'react'
+import { mouseFollowerStyles } from '../consts'
 
 export function MouseFollower() {
 
     const [enabledEffect, setEnabledEffect] = useState(true)
     const [positionMouse, setPositionMouse] = useState({x: 0, y: 0})
     const [styleMouse, setStyleMouse] = useState("none")
-    const STYLES = {
-        transform: `translate(${positionMouse.x}px, ${positionMouse.y}px)`,
-        display: `${setStyleMouse}`
-    }
-  
-    const buttonRemoveDisplay = () => {
-      setEnabledEffect(!enabledEffect)
-      setStyleMouse(styleMouse === "none" ? "block": "none")
-    }
 
     useEffect(() => {
         document.body.classList.toggle("enabled", enabledEffect)
@@ -37,7 +29,7 @@ export function MouseFollower() {
 
     return (
         <>
-            <div className='cursorFollower' style={STYLES}/>
+            <div className='cursorFollower' style={mouseFollowerStyles(positionMouse, setStyleMouse)}/>
         </>
     )
 }

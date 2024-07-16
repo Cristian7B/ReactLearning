@@ -16,3 +16,8 @@ export const foodStyles = (positionFruit, startGame) => ({
     display: startGame ? "block" : "none",
     opacity: startGame ? 1 : 0,
 });
+
+export const mouseFollowerStyles = (positionMouse, setStyleMouse) => ({
+    transform: `translate(${positionMouse.x}px, ${positionMouse.y}px)`,
+    display: `${setStyleMouse}`
+});
