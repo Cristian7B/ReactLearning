@@ -1,25 +1,21 @@
-import { MouseFollower } from './components/MouseFollower'
-import './App.css'
-import { DivGame } from './components/DivGame'
-import { useState } from 'react'
-import { NavPage } from './components/NavPage'
-import { TitlePrincipal } from './components/TitlePrincipal'
-import { StartGameRedirect } from './components/StartGameRedirect'
+import { MouseFollower } from './modules/principal/components/MouseFollower'
+import { PrincipalPage } from './modules/principal/components/PrincipalPage'
+import { GamePage } from './modules/game/components/GamePage'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { NavPage } from './modules/principal/components/NavPage'
 
 function App() {
   return (
     <>
-      <div className="principalPageGame">
-        <NavPage/>
-        <div className="titlePrincipal">
-          <TitlePrincipal/>
-          <StartGameRedirect/>
-        </div>
-      </div>
-      <main>
-        <MouseFollower/>
-        {/* <DivGame/> */}
-      </main>
+    <Router>
+      <MouseFollower/>
+      <NavPage/>
+      <Routes>
+        <Route path='/' element={<PrincipalPage/>}></Route>
+        <Route path='/game' element={<GamePage/>}></Route>
+      </Routes>
+    </Router>
     </>
   )
 }
