@@ -29,14 +29,14 @@ const reducer = (state, action) => {
 
         case "REMOVE_FROM_CART": {
             const {id} = actionPayload
-            return state => state.filter(item => item.id !== id)
+            return state.filter(item => item.id !== id)
         }
 
         case "CLEAR_CART": {
             return initialState
         }
     }
-    
+
     return state
 }
 

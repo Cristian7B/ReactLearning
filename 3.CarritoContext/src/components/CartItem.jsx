@@ -2,6 +2,8 @@ import { useCart } from "../hooks/useCart"
 
 export function CartItem() {
     const {cart, addToCart} = useCart()
+
+    console.log(cart)
     return (
         <>
         {   
