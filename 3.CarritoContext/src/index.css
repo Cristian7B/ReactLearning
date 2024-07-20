@@ -144,3 +144,20 @@ input[type="range"]::-moz-range-track {
   background: #ddd;
   border-radius: 5px;
 }
+
+.buttonAddRemove {
+  background-color: #0057b39f;
+  outline: none;
+  transition: all ease 0.2s;
+  border: none;
+}
+
+.buttonAddRemove:hover {
+  opacity: 0.9;
+  transform: scale(1.04);
+  border: none;
+}
+
+.buttonAddRemove.remove {
+  background-color: red;
+}

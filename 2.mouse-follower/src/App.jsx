@@ -4,10 +4,13 @@ import { GamePage } from './modules/game/components/GamePage'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { NavPage } from './modules/principal/components/NavPage'
+import { Analytics } from '@vercel/analytics/react'
+import { stylesBackground } from './modules/game/utils/consts'
 
 function App() {
   return (
-    <>
+    <div style={stylesBackground}>
+    <Analytics/>
     <Router>
       <MouseFollower/>
       <NavPage/>
@@ -16,7 +19,7 @@ function App() {
         <Route path='/game' element={<GamePage/>}></Route>
       </Routes>
     </Router>
-    </>
+    </div>
   )
 }
 

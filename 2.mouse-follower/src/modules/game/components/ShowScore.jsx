@@ -1,6 +1,7 @@
 import scoreIcon from "../../../assets/score.svg"
 
 export function ShowScore({score}) {
+
     return (
         <div className="showScoreContainer">
             <div className="scoreIcon">
@@ -8,7 +9,7 @@ export function ShowScore({score}) {
                 <h1>Score</h1>
             </div>
             <div className="actualScore">
-                ¡{score}100!
+                ¡{score}!
             </div>
         </div>
     )
