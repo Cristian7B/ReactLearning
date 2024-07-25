@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profileData": [
+    {
+      "name": "typicode",
+      "password": "jajajaja",
+      "id": "1a67"
+    },
+    {
+      "id": "ffe9",
+      "username": "devCristian",
+      "password": "asdf"
+    },
+    {
+      "id": "5d61",
+      "correo": "asdf@gm.com",
+      "contraseña": "asdf"
+    },
+    {
+      "id": "b033",
+      "correo": "ccbonillal@udistrital.edu.co",
+      "contraseña": "j"
+    },
+    {
+      "id": "c1d7",
+      "correo": "ccbonillal@udistrital.edu.co",
+      "nombre": "Cristian Camilo"
+    },
+    {
+      "id": "5eb6",
+      "correo": "ccbonillal@udistrital.edu.co",
+      "nombre": "Cristian Camilo"
+    },
+    {
+      "id": "4000",
+      "correo": "ccbonillal@udistrital.edu.co",
+      "nombre": "Cristian Camilo"
+    },
+    {
+      "id": "f035",
+      "correo": "ccbonillal@udistrital.edu.co",
+      "nombre": "Cristian Camilo B"
+    },
+    {
+      "id": "1e3a",
+      "correo": "ccbonillal@udistrital.edu.co",
+      "nombre": "Cristian Camilo Bonilla"
+    }
+  ]
+}

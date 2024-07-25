@@ -22,7 +22,7 @@ img, video, svg { height: auto; max-width: 100%; }
 }
 
 :root {
-  background-color: #1e1e1e;
+  background-color: #5e5e5e80;
 }
 
 #root {
@@ -77,15 +77,14 @@ img, video, svg { height: auto; max-width: 100%; }
 }
 
 .acmLogo {
-  width: 100px;
-  margin-bottom: 30px;
+  width: 150px;
+  transform: rotate(-10deg);
 }
 
 .containerInput {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .containerInput input {
@@ -98,6 +97,7 @@ img, video, svg { height: auto; max-width: 100%; }
   background-color: #d9d9d9;
   font-weight: 500;
   color: #000;
+  margin-bottom: 9px;
 }
 
 .formSubmitData h3 {
@@ -106,18 +106,22 @@ img, video, svg { height: auto; max-width: 100%; }
 }
 
 .formSubmitData button {
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 5px;
   border: 0;
   background-color: #0147B8;
   border-radius: 20px;
   color: #fff;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 15px;
   cursor: pointer;
   transition: all ease 0.3s;
 }
 
 .formSubmitData button:hover {
   opacity: 0.8;
+}
+
+.required {
+  color: rgba(255, 33, 33, 0.842);
 }
